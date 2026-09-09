@@ -18,8 +18,18 @@
         Correção de ícones: o reset global aplica font-family: "Poppins" em *,
         o que sobrescreve a font-family dos icon fonts (themify-icons usa 'themify').
       */
-      [class^="ti-"],
-      [class*=" ti-"] {
+      i[class^="ti-"],
+      i[class*=" ti-"],
+      span[class^="ti-"],
+      span[class*=" ti-"],
+      i[class^="ti-"]::before,
+      i[class*=" ti-"]::before,
+      span[class^="ti-"]::before,
+      span[class*=" ti-"]::before,
+      i[class^="ti-"]::after,
+      i[class*=" ti-"]::after,
+      span[class^="ti-"]::after,
+      span[class*=" ti-"]::after {
         font-family: "themify" !important;
         speak: never;
         font-style: normal;
@@ -27,17 +37,22 @@
         font-variant: normal;
         text-transform: none;
         line-height: 1;
+        display: inline-block;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
 
-      .icon-circle [class^="ti-"],
-      .icon-circle [class*=" ti-"] {
+      .icon-circle i[class^="ti-"],
+      .icon-circle i[class*=" ti-"],
+      .icon-circle span[class^="ti-"],
+      .icon-circle span[class*=" ti-"] {
         font-size: 1.2rem;
       }
 
-      .floating-badge [class^="ti-"],
-      .floating-badge [class*=" ti-"] {
+      .floating-badge i[class^="ti-"],
+      .floating-badge i[class*=" ti-"],
+      .floating-badge span[class^="ti-"],
+      .floating-badge span[class*=" ti-"] {
         font-size: 1.8rem;
       }
 
@@ -156,7 +171,37 @@
           </figure>
         </aside>
       </section>
+<section id="/recursos" class="section-block separator-top" aria-labelledby="recursos-titulo">
+        <header class="section-header-marketing text-center-marketing">
+          <span class="tag-marketing">Recursos de Emergência</span>
+          <h2 id="recursos-titulo">Canais de Denúncia e Suporte Imediato</h2>
+        </header>
 
+        <ul class="recursos-grid">
+          <li class="card-recurso text-center">
+            <figure class="recurso-icon emergency" aria-hidden="true">
+              <i class="ti-headphone-alt"></i>
+            </figure>
+            <h3>Ligue 180</h3>
+            <p>
+              Central de Atendimento à Mulher. Registro de denúncias,
+              orientações jurídicas e acolhimento imediato. Gratuito e 24 horas.
+            </p>
+            <a href="tel:180" class="btn-recurso-action">Discar 180</a>
+          </li>
+          <li class="card-recurso text-center">
+            <figure class="recurso-icon emergency" aria-hidden="true">
+              <i class="ti-shield"></i>
+            </figure>
+            <h3>Ligue 190</h3>
+            <p>
+              Polícia Militar. Utilize em situações de ameaça iminente ou
+              flagrante de agressão doméstica. Atendimento emergencial rápido.
+            </p>
+            <a href="tel:190" class="btn-recurso-action">Discar 190</a>
+          </li>
+        </ul>
+      </section>
       <!-- 2. SEÇÃO: TIPOS DE VIOLÊNCIA -->
       <section id="violencia" class="section-block" aria-labelledby="violencia-titulo">
         <header class="section-header-marketing">
@@ -542,38 +587,7 @@
         </article>
       </section>
 
-      <!-- 7. SEÇÃO: RECURSOS -->
-      <section id="/recursos" class="section-block separator-top" aria-labelledby="recursos-titulo">
-        <header class="section-header-marketing text-center-marketing">
-          <span class="tag-marketing">Recursos de Emergência</span>
-          <h2 id="recursos-titulo">Canais de Denúncia e Suporte Imediato</h2>
-        </header>
-
-        <ul class="recursos-grid">
-          <li class="card-recurso text-center">
-            <figure class="recurso-icon emergency" aria-hidden="true">
-              <i class="ti-headphone-alt"></i>
-            </figure>
-            <h3>Ligue 180</h3>
-            <p>
-              Central de Atendimento à Mulher. Registro de denúncias,
-              orientações jurídicas e acolhimento imediato. Gratuito e 24 horas.
-            </p>
-            <a href="tel:180" class="btn-recurso-action">Discar 180</a>
-          </li>
-          <li class="card-recurso text-center">
-            <figure class="recurso-icon emergency" aria-hidden="true">
-              <i class="ti-shield"></i>
-            </figure>
-            <h3>Ligue 190</h3>
-            <p>
-              Polícia Militar. Utilize em situações de ameaça iminente ou
-              flagrante de agressão doméstica. Atendimento emergencial rápido.
-            </p>
-            <a href="tel:190" class="btn-recurso-action">Discar 190</a>
-          </li>
-        </ul>
-      </section>
+    
 
     </main>
 
